@@ -1,0 +1,34 @@
+[
+  {
+    "timestamp": "2025-08-17T02:43:18.608802",
+    "tool_name": "calculator",
+    "input": {
+      "expression": "2 + 3"
+    },
+    "output": "{'result': 5, 'formatted_result': '5'}"
+  },
+  {
+    "timestamp": "2025-08-17T02:43:18.610801",
+    "tool_name": "calculator",
+    "input": {
+      "expression": "100 * 5 / 2"
+    },
+    "output": "{'result': 250.0, 'formatted_result': '250'}"
+  },
+  {
+    "timestamp": "2025-08-17T02:43:18.612802",
+    "tool_name": "calculator",
+    "input": {
+      "expression": "1000 + 500"
+    },
+    "output": "{'result': 1500, 'formatted_result': '1500'}"
+  },
+  {
+    "timestamp": "2025-08-17T02:43:18.614802",
+    "tool_name": "calculator",
+    "input": {
+      "expression": "22 + 69.3 + 214.5"
+    },
+    "output": "{'result': 305.8, 'formatted_result': '305.80'}"
+  }
+]
