@@ -16,7 +16,7 @@ class AnswerResponse(BaseModel):
     question: str = Field(description="The original user question")
     answer: str = Field(description="The generated answer")
     sources: List[str] = Field(default_factory=lambda: list, description="List of source document IDs used")
-    confidence: float = Field(description="Confidence score between 0 and 1")
+    confidence: float = Field(ge=0.0, le=1.0, description="Confidence score between 0 and 1")
     timestamp: datetime = Field(default_factory=datetime.now, description="When the response was generated")
 
 
@@ -41,7 +41,7 @@ class CalculationResponse(BaseModel):
 class UserIntent(BaseModel):
     """User intent classification"""
     intent_type: Literal["qa", "summarization", "calculation", "unknown"] = Field(description="The classified intent")
-    confidence: float = Field(description="Confidence in classification (float between 0 and 1)")
+    confidence: float = Field(ge=0.0, le=1.0, description="Confidence score between 0 and 1")
     reasoning: str = Field(description="Explanation for the classification")
 
 
